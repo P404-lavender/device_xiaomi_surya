@@ -11,15 +11,15 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit from common Cherish OS configuration
-$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
+# Inherit from common Aosp configuration
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Target
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GMS := true
 
-PRODUCT_NAME := cherish_surya
+PRODUCT_NAME := aosp_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
